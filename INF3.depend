@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1570720957 source:/home/franz/Studium/Semester 6/Inf 3/Programm/INF3/ueb01.cpp
+	<stdio.h>
+	"CDate.h"
+
+1570722104 /home/franz/Studium/Semester 6/Inf 3/Programm/INF3/CDate.h
+
+1570725149 source:/home/franz/Studium/Semester 6/Inf 3/Programm/INF3/CDate.cpp
+	<stdio.h>
+	<time.h>
+	"CDate.h"
+
+1571323973 source:/home/franz/Studium/Semester 6/Inf 3/Programm/INF3/CTime.cpp
+	<stdio.h>
+	<time.h>
+	"CTime.h"
+
+1571322749 /home/franz/Studium/Semester 6/Inf 3/Programm/INF3/CTime.h
+
