@@ -8,7 +8,7 @@ class CTime
 
    public:
       CTime();
-      CTime(int h, int m, int s);
+      CTime(int h, int m, int s = 0);
 
       void print();
 

@@ -12,12 +12,11 @@ class CMoney
       string currency;
 
    public:
-      CMoney();
-      CMoney(double s, string c);
+      CMoney(double s, string c = "EUR");
       void print();
 
-      void set_s(double sum){this->s=sum;}
-      void set_c(string currency){this->c=currency;}
+      void set_s(double sum){this->sum=sum;}
+      void set_c(string currency){this->currency=currency;}
 
       double get_s(){return sum;}
       string get_c(){return currency;}

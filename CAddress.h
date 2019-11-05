@@ -8,10 +8,13 @@ using namespace std;
 class CAddress
 {
    private:
-      string street, housenumber, postcode, city;
+      string street, postcode, town;
 
    public:
-      CAddress(string s, string h, string p, string c);
+      CAddress(string s, string p, string t)
+      :street(s), postcode(p), town(t){};
+
+      void print();
 
 };
 

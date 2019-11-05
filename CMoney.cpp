@@ -3,13 +3,9 @@
 
 void CMoney::print(){
 
-   printf("%d %s", sum, currency);
+   printf("%.02f %s", sum, currency.c_str());
 }
 
-CMoney::CMoney(){
-
-
-}
 
 CMoney::CMoney(double s, string c){
 

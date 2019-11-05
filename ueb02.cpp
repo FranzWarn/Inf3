@@ -6,7 +6,7 @@ using namespace std;
 #include "CDate.h"
 #include "CTime.h"
 #include "CMoney.h"
-//#include "CAddress.h"
+#include "CAddress.h"
 //#include "CAccount.h"
 //#include "CCustomer.h"
 
@@ -16,8 +16,8 @@ int main()
    CDate Geburtsdatum(7, 7, 1977);
    CMoney Startkapital(150.0);
    CAddress Adresse("Mustergasse 3a", "D - 99889", "Musterstadt");
-   CCustomer Kunde(4711, "Egon Muster", Geburtsdatum, Adresse);
-   CAccount Konto1("DE99123456781234567890", &Kunde, Startkapital);
+//   CCustomer Kunde(4711, "Egon Muster", Geburtsdatum, Adresse);
+//   CAccount Konto1("DE99123456781234567890", &Kunde, Startkapital);
 
    printf("Dieses Programm wurde um ");
    Jetzt.print();
@@ -26,7 +26,7 @@ int main()
    printf("Das Startkapital fuer alle Kunden betraegt ");
    Startkapital.print();
    printf(".\n\n");
-
+/*
    printf("Personenbezogene Daten des Bank-Kunden:\n");
    Kunde.print();
    printf("\n\n");
@@ -44,6 +44,6 @@ int main()
    printf("Daten des Konto 2:\n");
    Konto2.print();
    printf("\n\n");
-
+*/
    return 0;
 }

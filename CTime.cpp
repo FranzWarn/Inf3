@@ -2,6 +2,7 @@
 #include <time.h>
 #include "CTime.h"
 
+
 void CTime::print(){
 
       printf("%02d:%02d:%02d", hour, minute, second);

@@ -32,7 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="CAccount.h" />
+		<Unit filename="CAddress.cpp" />
 		<Unit filename="CAddress.h" />
+		<Unit filename="CCoustomer.h" />
+		<Unit filename="CCustomer.cpp" />
 		<Unit filename="CDate.cpp" />
 		<Unit filename="CDate.h" />
 		<Unit filename="CMoney.cpp" />
