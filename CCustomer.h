@@ -7,8 +7,9 @@ using namespace std;
 
 #include "CDate.h"
 #include "CAddress.h"
-#include "CCoustomer.h"
+#include "CAccount.h"
 
+class CAccount;
 
 class CCustomer
 {
@@ -20,14 +21,11 @@ class CCustomer
       vector<CAccount *>accountList;
 
    public:
-      CCustomer(long i, string n, CAddress a, CDate b);
+      CCustomer(long i, string n, CDate b, CAddress a);
 
       void print();
+      void printName();
       void addAccount(CAccount *newAccount);
-
-      void set_id(long id){this->id=id;}
-      void set_name(string name){this->name=name;}
- //     void set_address(CAddress(string s, string p, string t)){this->address.street=s, this->address.postcode=p, this->address.town=t;}
 
 };
 

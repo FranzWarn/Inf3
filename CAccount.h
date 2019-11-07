@@ -3,6 +3,7 @@
 
 #include <string>
 #include "CMoney.h"
+#include "CCustomer.h"
 
 class CCustomer;
 
@@ -12,11 +13,11 @@ class CAccount{
 
    private:
       string iban;
-      CMoney balance;
       CCustomer *customer;
+      CMoney balance;
 
    public:
-      CAccount(string i, CMoney b, CCustomer *c);
+      CAccount(string i, CCustomer *c, CMoney b);
 
       void print();
       void printiban();

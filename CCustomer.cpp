@@ -1,19 +1,31 @@
 #include <stdio.h>
 #include <iostream>
-#include "CCoustomer.h"
+#include <vector>
+using namespace std;
+#include "CCustomer.h"
 
 
-CCustomer::CCustomer(long i, string n, CAddress a, CDate b)
-: id{i}, name{n}, address{a}, birthday{b} {}
+CCustomer::CCustomer(long i, string n, CDate b, CAddress a)
+: id{i}, name{n}, birthday{b}, address{a} {}
 
-void CCustomer::print(){
-   printf("%s (Kd-Nr. %ld)\n", name.c_str(), id);
-   address.print();
-   printf("Geboren am: ");
-   birthday.print();
+void CCustomer::print()
+{
+    printName(); cout << endl;
+    address.print(); cout << endl;
+    cout << "geboren am: "; birthday.print();
+    cout << "\nKonten:";
+    for (auto elem: accountList)
+    {
+        cout << "\n- Kontonr.: "; elem->printiban();
+    }
 
 }
 
 void CCustomer::addAccount(CAccount *newAccount){
    accountList.push_back(newAccount);
+}
+
+void CCustomer::printName()
+{
+    cout << name << " (Kd-Nr. " << id << ")";
 }
