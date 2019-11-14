@@ -10,6 +10,7 @@ using namespace std;
 #include "CAccount.h"
 
 class CAccount;
+class CBank;
 
 class CCustomer
 {
@@ -23,6 +24,7 @@ class CCustomer
    public:
       CCustomer(long i, string n, CDate b, CAddress a);
 
+      string getName() const {return name;}
       void print();
       void printName();
       void addAccount(CAccount *newAccount);
